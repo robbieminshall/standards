@@ -4,12 +4,12 @@ AC-1:
   name: Access Control Policy And Procedures
   description: |-
     The organization:
-     - a.  Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:
-       - 1.  An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-       - 2.  Procedures to facilitate the implementation of the access control policy and associated access controls; and
-     - b.  Reviews and updates the current:
-       - 1.  Access control policy [FedRAMP Assignment: at least annually]; and
-       - 2.  Access control procedures [FedRAMP Assignment: at least annually or whenever a significant change occurs].
+     a.  Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:
+       1.  An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+       2.  Procedures to facilitate the implementation of the access control policy and associated access controls; and
+     b.  Reviews and updates the current:
+       1.  Access control policy [FedRAMP Assignment: at least annually]; and
+       2.  Access control procedures [FedRAMP Assignment: at least annually or whenever a significant change occurs].
 AC-2:
   family: AC
   name: Account Management
