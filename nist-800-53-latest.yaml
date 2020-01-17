@@ -11,10 +11,8 @@ AC-1:
           2.  Procedures to facilitate the implementation of the access control policy and associated access controls; and
        </ol>
        - b.  Reviews and updates the current:
-       <ol>
         1.  Access control policy [FedRAMP Assignment: at least annually]; and
         2.  Access control procedures [FedRAMP Assignment: at least annually or whenever a significant change occurs].
-       </ol>
 AC-2:
   family: AC
   name: Account Management
