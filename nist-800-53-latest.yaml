@@ -12,8 +12,8 @@ AC-1:
        </ol>
        - b.  Reviews and updates the current:
        <ol>
-          1.  Access control policy [FedRAMP Assignment: at least annually]; and
-          2.  Access control procedures [FedRAMP Assignment: at least annually or whenever a significant change occurs].
+        1.  Access control policy [FedRAMP Assignment: at least annually]; and
+        2.  Access control procedures [FedRAMP Assignment: at least annually or whenever a significant change occurs].
        </ol>
 AC-2:
   family: AC
