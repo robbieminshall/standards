@@ -7,8 +7,8 @@ AC-1:
 
     - a.  Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:
 
-      - 1.  An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-      - 2.  Procedures to facilitate the implementation of the access control policy and associated access controls; and
+      1.  An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+      2.  Procedures to facilitate the implementation of the access control policy and associated access controls; and
 
     - b.  Reviews and updates the current:
 
@@ -28,13 +28,13 @@ AC-2:
     - f.  Creates, enables, modifies, disables, and removes information system accounts in accordance with [Assignment: organization-defined procedures or conditions];
     - g.  Monitors the use of information system accounts;
     - h.  Notifies account managers:
-      - 1.  When accounts are no longer required;
-      - 2.  When users are terminated or transferred; and
-      - 3.  When individual information system usage or need-to-know changes;
+      1.  When accounts are no longer required;
+      2.  When users are terminated or transferred; and
+      3.  When individual information system usage or need-to-know changes;
     - i.  Authorizes access to the information system based on:
-      - 1.  A valid access authorization;
-      - 2.  Intended system usage; and
-      - 3.  Other attributes as required by the organization or associated missions/business functions;
+       1.  A valid access authorization;
+       2.  Intended system usage; and
+       3.  Other attributes as required by the organization or associated missions/business functions;
     - j.  Reviews accounts for compliance with account management requirements [Assignment: organization-defined frequency]; and
     - k.  Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
 AC-2 (1):
