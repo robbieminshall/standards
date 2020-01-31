@@ -6,8 +6,6 @@ AC-1:
     The organization:
     - a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]:
       - (1)  An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-        - (a) test part 1
-        - (b) test part 2
       - (2)  Procedures to facilitate the implementation of the access control policy and associated access controls; and
     - b. Reviews and updates the current:
       - (1)  Access control policy [FedRAMP Assignment: at least annually]; and
@@ -45,10 +43,11 @@ AC-2 (2):
 AC-2 (3):
   family: AC
   name: Disable Inactive Accounts
-  description: 'The information system automatically disables inactive accounts after  [FedRAMP Assignment: thirty-five (35) days for user accounts].
-  
-  AC-2 (3) Additional FedRAMP Requirements and Guidance:
-  Requirement: The service provider defines the time period for non-user accounts (e.g., accounts associated with devices).  The time periods are approved and accepted by the JAB/AO.  Where user management is a function of the service, reports of activity of consumer users shall be made available.'
+  description: |-
+    The information system automatically disables inactive accounts after  [FedRAMP Assignment: thirty-five (35) days for user accounts].
+
+    AC-2 (3) Additional FedRAMP Requirements and Guidance:
+    Requirement: The service provider defines the time period for non-user accounts (e.g., accounts associated with devices).  The time periods are approved and accepted by the JAB/AO.  Where user management is a function of the service, reports of activity of consumer users shall be made available.
 AC-2 (4):
   family: AC
   name: Automated Audit Actions
@@ -56,10 +55,11 @@ AC-2 (4):
 AC-2 (5):
   family: AC
   name: Inactivity Logout
-  description: 'The organization requires that users log out when [FedRAMP Assignment: inactivity is anticipated to exceed fifteen (15) minutes].
-  
-  AC-2 (5) Additional FedRAMP Requirements and Guidance:
-  Guidance: Should use a shorter timeframe than AC-12'
+  description: |-
+    The organization requires that users log out when [FedRAMP Assignment: inactivity is anticipated to exceed fifteen (15) minutes].
+    
+    AC-2 (5) Additional FedRAMP Requirements and Guidance:
+    Guidance: Should use a shorter timeframe than AC-12
 AC-2 (6):
   family: AC
   name: Dynamic Privilege Management
@@ -79,16 +79,18 @@ AC-2 (8):
 AC-2 (9):
   family: AC
   name: Restrictions On Use Of Shared / Group Accounts
-  description: 'The organization only permits the use of shared/group accounts that meet [FedRAMP Assignment: organization-defined need with justification statement that explains why such accounts are necessary].
-  
-  AC-2 (9) Additional FedRAMP Requirements and Guidance: Required if shared/group accounts are deployed.'
+  description: |-
+    The organization only permits the use of shared/group accounts that meet [FedRAMP Assignment: organization-defined need with justification statement that explains why such accounts are necessary].
+
+    AC-2 (9) Additional FedRAMP Requirements and Guidance: Required if shared/group accounts are deployed.
 AC-2 (10):
   family: AC
   name: Shared / Group Account Credential Termination
-  description: 'The information system terminates shared/group account credentials when members leave the group.
+  description: |-
+    The information system terminates shared/group account credentials when members leave the group.
 
-  AC-2 (10) Additional FedRAMP Requirements and Guidance: 
-  Required if shared/group accounts are deployed.'
+    AC-2 (10) Additional FedRAMP Requirements and Guidance: 
+    Required if shared/group accounts are deployed.
 AC-2 (11):
   family: AC
   name: Usage Conditions
@@ -136,7 +138,7 @@ AC-3 (4):
   name: Discretionary Access Control
   description: |-
     The information system enforces [Assignment: organization-defined discretionary access control policy] over defined subjects and objects where the policy specifies that a subject that has been granted access to information can do one or more of the following:
-    - a. Pass the  information to any other subjects or objects;
+    - a. Pass the information to any other subjects or objects;
     - b. Grant its privileges to other subjects;
     - c. Change security attributes on subjects, objects, the information system, or the information system's components;
     - d. Choose the security attributes to be associated with newly created or revised objects; or
@@ -282,9 +284,10 @@ AC-6 (1):
 AC-6 (2):
   family: AC
   name: Non-Privileged Access For Nonsecurity Functions
-  description: 'The organization requires that users of information system accounts, or roles, with access to [FedRAMP Assignment: all security functions], use non-privileged accounts or roles, when accessing non-security functions.
-
-  AC-6 (2) Additional FedRAMP Requirements and Guidance: Examples of security functions include but are not limited to: establishing system accounts, configuring access authorizations (i.e., permissions, privileges), setting events to be audited, and setting intrusion detection parameters, system programming, system and security administration, other privileged functions.'
+  description: |-
+    The organization requires that users of information system accounts, or roles, with access to [FedRAMP Assignment: all security functions], use non-privileged accounts or roles, when accessing non-security functions.
+    
+    AC-6 (2) Additional FedRAMP Requirements and Guidance: Examples of security functions include but are not limited to: establishing system accounts, configuring access authorizations (i.e., permissions, privileges), setting events to be audited, and setting intrusion detection parameters, system programming, system and security administration, other privileged functions.
 AC-6 (3):
   family: AC
   name: Network Access To Privileged Commands
@@ -765,12 +768,13 @@ AU-3:
 AU-3 (1):
   family: AU
   name: Additional Audit Information
-  description: 'The information system generates audit records containing the following additional information: [FedRAMP Assignment: organization-defined additional, more detailed information].
-  
-  AU-3 (1) Additional FedRAMP Requirements and Guidance:
-  Requirement: The service provider defines audit record types [FedRAMP Assignment: session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands].  The audit record types are approved and accepted by the JAB/AO.
-  
-  Guidance: For client-server transactions, the number of bytes sent and received gives bidirectional transfer information that can be helpful during an investigation or inquiry.'
+  description: |-
+    The information system generates audit records containing the following additional information: [FedRAMP Assignment: organization-defined additional, more detailed information].
+    
+    AU-3 (1) Additional FedRAMP Requirements and Guidance:
+    Requirement: The service provider defines audit record types [FedRAMP Assignment: session, connection, transaction, or activity duration; for client-server transactions, the number of bytes received and bytes sent; additional informational messages to diagnose or identify the event; characteristics that describe or identify the object or resource being acted upon; individual identities of group account users; full-text of privileged commands].  The audit record types are approved and accepted by the JAB/AO.
+    
+    Guidance: For client-server transactions, the number of bytes sent and received gives bidirectional transfer information that can be helpful during an investigation or inquiry.
 AU-3 (2):
   family: AU
   name: Centralized Management Of Planned Audit Record Content
@@ -839,10 +843,11 @@ AU-6 (5):
 AU-6 (6):
   family: AU
   name: Correlation With Physical Monitoring
-  description: 'The organization correlates information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.
-
-  AU-6 Additional FedRAMP Requirements and Guidance: 
-  Requirement: Coordination between service provider and consumer shall be documented and accepted by the JAB/AO.'
+  description: |-
+    The organization correlates information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.
+    
+    AU-6 Additional FedRAMP Requirements and Guidance:
+    Requirement: Coordination between service provider and consumer shall be documented and accepted by the JAB/AO.
 AU-6 (7):
   family: AU
   name: Permitted Actions
@@ -965,10 +970,11 @@ AU-10 (5):
 AU-11:
   family: AU
   name: Audit Record Retention
-  description: 'The organization retains audit records for [FedRAMP Assignment: at least one (1) year] to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.
-  
-  AU-11 Additional FedRAMP Requirements and Guidance:  
-  Requirement: The service provider retains audit records on-line for at least ninety days and further preserves audit records off-line for a period that is in accordance with NARA requirements'
+  description: |-
+    The organization retains audit records for [FedRAMP Assignment: at least one (1) year] to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.
+    
+    AU-11 Additional FedRAMP Requirements and Guidance:  
+    Requirement: The service provider retains audit records on-line for at least ninety days and further preserves audit records off-line for a period that is in accordance with NARA requirements
 AU-11 (1):
   family: AU
   name: Long-Term Retrieval Capability
@@ -1068,9 +1074,10 @@ CA-2:
 CA-2 (1):
   family: CA
   name: Independent Assessors
-  description: 'The organization employs assessors or assessment teams with [Assignment: organization-defined level of independence] to conduct security control assessments.
-  
-  CA-2 (1) Additional FedRAMP Requirements and Guidance: Requirement: For JAB Authorization, must use an accredited Third Party Assessment Organization (3PAO).'
+  description: |-
+    The organization employs assessors or assessment teams with [Assignment: organization-defined level of independence] to conduct security control assessments.
+    
+    CA-2 (1) Additional FedRAMP Requirements and Guidance: Requirement: For JAB Authorization, must use an accredited Third Party Assessment Organization (3PAO).
 CA-2 (2):
   family: CA
   name: Specialized Assessments
@@ -1102,10 +1109,11 @@ CA-3 (2):
 CA-3 (3):
   family: CA
   name: Unclassified Non-National Security System Connections
-  description: 'The organization prohibits the direct connection of an [Assignment: organization-defined unclassified, non-national security system] to an external network without the use of [FedRAMP Assignment: boundary protections which meet Trusted Internet Connection (TIC) requirements].
-  
-  CA-3 (3) Additional FedRAMP Requirements and Guidance: 
-  Guidance: Refer to Appendix H – Cloud Considerations of the TIC Reference Architecture document. Link: https://www.dhs.gov/publication/tic-reference-architecture-22'
+  description: |-
+    The organization prohibits the direct connection of an [Assignment: organization-defined unclassified, non-national security system] to an external network without the use of [FedRAMP Assignment: boundary protections which meet Trusted Internet Connection (TIC) requirements].
+    
+    CA-3 (3) Additional FedRAMP Requirements and Guidance:
+    Guidance: Refer to Appendix H – Cloud Considerations of the TIC Reference Architecture document. Link: https://www.dhs.gov/publication/tic-reference-architecture-22
 CA-3 (4):
   family: CA
   name: Connections To Public Networks
@@ -1113,10 +1121,11 @@ CA-3 (4):
 CA-3 (5):
   family: CA
   name: Restrictions On External System Connections
-  description: 'The organization employs [FedRAMP Selection: deny-all, permit by exception] policy for allowing [FedRAMP Assignment: any systems] to connect to external information systems.
-
-  CA-3 (5) Additional FedRAMP Requirements and Guidance: 
-  Guidance: For JAB Authorization, CSPs shall include details of this control in their architecture briefing.'
+  description: |-
+    The organization employs [FedRAMP Selection: deny-all, permit by exception] policy for allowing [FedRAMP Assignment: any systems] to connect to external information systems.
+    
+    CA-3 (5) Additional FedRAMP Requirements and Guidance:
+    Guidance: For JAB Authorization, CSPs shall include details of this control in their architecture briefing.
 CA-4:
   family: CA
   name: Security Certification
@@ -1191,11 +1200,12 @@ CA-7 (3):
 CA-8:
   family: CA
   name: Penetration Testing
-  description: 'The organization conducts penetration testing [FedRAMP Assignment: at least annually] on [Assignment: organization-defined information systems or system components].
-  
-  CA-8 Additional FedRAMP Requirements and Guidance 
-  Guidance: See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents> Penetration Test Guidance 
-  https://www.FedRAMP.gov/documents/'
+  description: |-
+    The organization conducts penetration testing [FedRAMP Assignment: at least annually] on [Assignment: organization-defined information systems or system components].
+    
+    CA-8 Additional FedRAMP Requirements and Guidance 
+    Guidance: See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents> Penetration Test Guidance 
+    https://www.FedRAMP.gov/documents/
 CA-8 (1):
   family: CA
   name: Independent Penetration Agent Or Team
@@ -1344,10 +1354,11 @@ CM-5 (2):
 CM-5 (3):
   family: CM
   name: Signed Components
-  description: 'The information system prevents the installation of [Assignment: organization-defined software and firmware components] without verification that the component has been digitally signed using a certificate that is recognized and approved by the organization.
-  
-  CM-5 (3) Additional FedRAMP Requirements and Guidance: 
-  Guidance: If digital signatures/certificates are unavailable, alternative cryptographic integrity checks (hashes, self-signed certs, etc.) can be used.'
+  description: |-
+    The information system prevents the installation of [Assignment: organization-defined software and firmware components] without verification that the component has been digitally signed using a certificate that is recognized and approved by the organization.
+    
+    CM-5 (3) Additional FedRAMP Requirements and Guidance:
+    Guidance: If digital signatures/certificates are unavailable, alternative cryptographic integrity checks (hashes, self-signed certs, etc.) can be used.
 CM-5 (4):
   family: CM
   name: Dual Authorization
@@ -1423,10 +1434,11 @@ CM-7 (1):
 CM-7 (2):
   family: CM
   name: Prevent Program Execution
-  description: 'The information system prevents program execution in accordance with [Selection (one or more): [Assignment: organization-defined policies regarding software program usage and restrictions]; rules authorizing the terms and conditions of software program usage].
-  
-  CM-7(2) Additional FedRAMP Requirements and Guidance: 
-  Guidance: This control shall be implemented in a technical manner on the information system to only allow programs to run that adhere to the policy (i.e., white listing).  This control is not to be based off of strictly written policy on what is allowed or not allowed to run.'
+  description: |-
+    The information system prevents program execution in accordance with [Selection (one or more): [Assignment: organization-defined policies regarding software program usage and restrictions]; rules authorizing the terms and conditions of software program usage].
+    
+    CM-7(2) Additional FedRAMP Requirements and Guidance:
+    Guidance: This control shall be implemented in a technical manner on the information system to only allow programs to run that adhere to the policy (i.e., white listing).  This control is not to be based off of strictly written policy on what is allowed or not allowed to run.
 CM-7 (3):
   family: CM
   name: Registration Compliance
@@ -1694,10 +1706,11 @@ CP-7:
 CP-7 (1):
   family: CP
   name: Separation From Primary Site
-  description: 'The organization identifies an alternate processing site that is separated from the primary processing site to reduce susceptibility to the same threats.
-
-  CP-7(1) Additional FedRAMP Requirements and Guidance:
-  Guidance: The service provider may determine what is considered a sufficient degree of separation between the primary and alternate processing sites, based on the types of threats that are of concern.  For one particular type of threat (i.e., hostile cyber-attack), the degree of separation between sites will be less relevant.'
+  description: |-
+    The organization identifies an alternate processing site that is separated from the primary processing site to reduce susceptibility to the same threats.
+    
+    CP-7(1) Additional FedRAMP Requirements and Guidance:
+    Guidance: The service provider may determine what is considered a sufficient degree of separation between the primary and alternate processing sites, based on the types of threats that are of concern.  For one particular type of threat (i.e., hostile cyber-attack), the degree of separation between sites will be less relevant.
 CP-7 (2):
   family: CP
   name: Accessibility
@@ -1721,10 +1734,11 @@ CP-7 (6):
 CP-8:
   family: CP
   name: Telecommunications Services
-  description: 'The organization establishes alternate telecommunications services including necessary agreements to permit the resumption of [Assignment: organization-defined information system operations] for essential missions and business functions within [FedRAMP Assignment: See CP-8 additional FedRAMP requirements and guidance] when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
-  
-  CP-8 Additional FedRAMP Requirements and Guidance: 
-  Requirement: The service provider defines a time period consistent with the recovery time objectives and business impact analysis.'
+  description: |-
+    The organization establishes alternate telecommunications services including necessary agreements to permit the resumption of [Assignment: organization-defined information system operations] for essential missions and business functions within [FedRAMP Assignment: See CP-8 additional FedRAMP requirements and guidance] when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
+    
+    CP-8 Additional FedRAMP Requirements and Guidance:
+    Requirement: The service provider defines a time period consistent with the recovery time objectives and business impact analysis.
 CP-8 (1):
   family: CP
   name: Priority Of Service Provisions
@@ -1771,7 +1785,7 @@ CP-9:
       CP-9 (b) Additional FedRAMP Requirements and Guidance: 
       Requirement: The service provider maintains at least three backup copies of system-level information (at least one of which is available online).
       
-    - c.	Conducts backups of information system documentation including security-related documentation [FedRAMP Assignment: daily incremental; weekly full ]; and 
+    - c. Conducts backups of information system documentation including security-related documentation [FedRAMP Assignment: daily incremental; weekly full ]; and 
     
       CP-9 (c) Additional FedRAMP Requirements and Guidance: 
       Requirement: The service provider maintains at least three backup copies of information system documentation including security information (at least one of which is available online).
@@ -1903,18 +1917,20 @@ IA-2 (10):
 IA-2 (11):
   family: IA
   name: Remote Access  - Separate Device
-  description: 'The information system implements multifactor authentication for remote access to privileged and non-privileged accounts such that one of the factors is provided by a device separate from the system gaining access and the device meets [FedRAMP Assignment: FIPS 140-2, NIAP* Certification, or NSA approval].
-  
-  *National Information Assurance Partnership (NIAP)
-  Additional FedRAMP Requirements and Guidance: 
-  Guidance: PIV = separate device. Please refer to NIST SP 800-157 Guidelines for Derived Personal Identity Verification (PIV) Credentials.  FIPS 140-2 means validated by the Cryptographic Module Validation Program (CMVP).'
+  description: |-
+    The information system implements multifactor authentication for remote access to privileged and non-privileged accounts such that one of the factors is provided by a device separate from the system gaining access and the device meets [FedRAMP Assignment: FIPS 140-2, NIAP* Certification, or NSA approval].
+    
+    *National Information Assurance Partnership (NIAP)
+    Additional FedRAMP Requirements and Guidance: 
+    Guidance: PIV = separate device. Please refer to NIST SP 800-157 Guidelines for Derived Personal Identity Verification (PIV) Credentials.  FIPS 140-2 means validated by the Cryptographic Module Validation Program (CMVP).
 IA-2 (12):
   family: IA
   name: Acceptance Of Piv Credentials
-  description: 'The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.
-
-  IA-2 (12) Additional FedRAMP Requirements and Guidance: 
-  Guidance: Include Common Access Card (CAC), i.e., the DoD technical implementation of PIV/FIPS 201/HSPD-12.'
+  description: |-
+    The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.
+    
+    IA-2 (12) Additional FedRAMP Requirements and Guidance: 
+    Guidance: Include Common Access Card (CAC), i.e., the DoD technical implementation of PIV/FIPS 201/HSPD-12.
 IA-2 (13):
   family: IA
   name: Out-Of-Band Authentication
@@ -2030,10 +2046,11 @@ IA-5 (3):
 IA-5 (4):
   family: IA
   name: Automated Support  For Password Strength Determination
-  description: 'The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy [FedRAMP Assignment: complexity as identified in IA-5 (1) Control Enhancement (H) Part A].
-  
-  IA-5(4) Additional FedRAMP Requirements and Guidance: 
-  Guidance: If automated mechanisms which enforce password authenticator strength at creation are not used, automated mechanisms must be used to audit strength of created password authenticators.'
+  description: |-
+    The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy [FedRAMP Assignment: complexity as identified in IA-5 (1) Control Enhancement (H) Part A].
+    
+    IA-5(4) Additional FedRAMP Requirements and Guidance:
+    Guidance: If automated mechanisms which enforce password authenticator strength at creation are not used, automated mechanisms must be used to audit strength of created password authenticators.
 IA-5 (5):
   family: IA
   name: Change Authenticators Prior To Delivery
@@ -2160,10 +2177,11 @@ IR-2 (2):
 IR-3:
   family: IR
   name: Incident Response Testing
-  description: 'The organization tests the incident response capability for the information system [FedRAMP Assignment: at least every six (6) months] using [FedRAMP Assignment: see additional FedRAMP Requirements and Guidance] to determine the incident response effectiveness and documents the results.
-  
-  IR-3 Additional FedRAMP Requirements and Guidance: 
-  Requirements: The service provider defines tests and/or exercises in accordance with NIST Special Publication 800-61 (as amended). For JAB authorization, the service provider provides test plans to the JAB/AO annually. Test plans are approved and accepted by the JAB/AO prior to the test commencing.'
+  description: |-
+    The organization tests the incident response capability for the information system [FedRAMP Assignment: at least every six (6) months] using [FedRAMP Assignment: see additional FedRAMP Requirements and Guidance] to determine the incident response effectiveness and documents the results.
+    
+    IR-3 Additional FedRAMP Requirements and Guidance: 
+    Requirements: The service provider defines tests and/or exercises in accordance with NIST Special Publication 800-61 (as amended). For JAB authorization, the service provider provides test plans to the JAB/AO annually. Test plans are approved and accepted by the JAB/AO prior to the test commencing.
 IR-3 (1):
   family: IR
   name: Automated Testing
@@ -2284,15 +2302,15 @@ IR-8:
       - (8) Is reviewed and approved by [Assignment: organization-defined personnel or roles];
     - b. Distributes copies of the incident response plan to [FedRAMP Assignment: see additional FedRAMP Requirements and Guidance].;
 
-      IR-8(b) Additional FedRAMP Requirements and Guidance: 
-      Requirement: The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements.  The incident response list includes designated FedRAMP personnel.
+        IR-8(b) Additional FedRAMP Requirements and Guidance: 
+        Requirement: The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements.  The incident response list includes designated FedRAMP personnel.
 
     - c. Reviews the incident response plan [FedRAMP Assignment: at least annually];
     - d. Updates the incident response plan to address system/organizational changes or problems encountered during plan implementation, execution, or testing;
     - e. Communicates incident response plan changes to [FedRAMP Assignment: see additional FedRAMP Requirements and Guidance]; and
 
-      IR-8(e) Additional FedRAMP Requirements and Guidance: 
-      Requirement:  The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements.  The incident response list includes designated FedRAMP personnel.
+        IR-8(e) Additional FedRAMP Requirements and Guidance: 
+        Requirement:  The service provider defines a list of incident response personnel (identified by name and/or by role) and organizational elements.  The incident response list includes designated FedRAMP personnel.
 
     - f. Protects the incident response plan from unauthorized disclosure and modification.
 IR-9:
@@ -2583,10 +2601,11 @@ MP-6 (1):
 MP-6 (2):
   family: MP
   name: Equipment Testing
-  description: 'The organization tests sanitization equipment and procedures [FedRAMP Assignment: at least every six (6) months] to verify that the intended sanitization is being achieved.
-  
-  MP-6(2) Additional FedRAMP Requirements and Guidance: 
-  Guidance: Equipment and procedures may be tested or evaluated for effectiveness. '
+  description: |-
+    The organization tests sanitization equipment and procedures [FedRAMP Assignment: at least every six (6) months] to verify that the intended sanitization is being achieved.
+    
+    MP-6(2) Additional FedRAMP Requirements and Guidance: 
+    Guidance: Equipment and procedures may be tested or evaluated for effectiveness.
 MP-6 (3):
   family: MP
   name: Nondestructive Techniques
@@ -3344,10 +3363,11 @@ RA-5 (9):
 RA-5 (10):
   family: RA
   name: Correlate Scanning Information
-  description: 'The organization correlates the output from vulnerability scanning tools to determine the presence of multi-vulnerability/multi-hop attack vectors.
+  description: |-
+    The organization correlates the output from vulnerability scanning tools to determine the presence of multi-vulnerability/multi-hop attack vectors.
   
-  RA-5 (10) Additional FedRAMP Requirements and Guidance: 
-  Guidance: If multiple tools are not used, this control is not applicable.'
+    RA-5 (10) Additional FedRAMP Requirements and Guidance: 
+    Guidance: If multiple tools are not used, this control is not applicable.
 RA-6:
   family: RA
   name: Technical Surveillance Countermeasures Survey
@@ -3428,7 +3448,7 @@ SA-4 (6):
     - b. Ensures that these products have been evaluated and/or validated by NSA or in accordance with NSA-approved procedures.
 SA-4 (7):
   family: SA
-  name: Niap-Approved  Protection Profiles
+  name: Niap-Approved Protection Profiles
   description: |-
     The organization:
     - a. Limits the use of commercially provided information assurance (IA) and IA-enabled information technology products to those products that have been successfully evaluated against a National Information Assurance partnership (NIAP)-approved Protection Profile for a specific technology type, if such a profile exists; and
@@ -3436,10 +3456,11 @@ SA-4 (7):
 SA-4 (8):
   family: SA
   name: Continuous Monitoring Plan
-  description: 'The organization requires the developer of the information system, system component, or information system service to produce a plan for the continuous monitoring of security control effectiveness that contains [FedRAMP Assignment: at least the minimum requirement as defined in control CA-7].
+  description: |-
+    The organization requires the developer of the information system, system component, or information system service to produce a plan for the continuous monitoring of security control effectiveness that contains [FedRAMP Assignment: at least the minimum requirement as defined in control CA-7].
   
-  SA-4 (8) Additional FedRAMP Requirements and Guidance: 
-  Guidance: CSP must use the same security standards regardless of where the system component or information system service is acquired.'
+    SA-4 (8) Additional FedRAMP Requirements and Guidance: 
+    Guidance: CSP must use the same security standards regardless of where the system component or information system service is acquired.
 SA-4 (9):
   family: SA
   name: Functions / Ports / Protocols / Services In Use
@@ -3532,10 +3553,11 @@ SA-9 (4):
 SA-9 (5):
   family: SA
   name: Processing, Storage, And Service Location
-  description: 'The organization restricts the location of  [FedRAMP Selection: information processing, information data, AND information services] to [Assignment: organization-defined locations] based on [Assignment: organization-defined requirements or conditions].
+  description: |-
+    The organization restricts the location of  [FedRAMP Selection: information processing, information data, AND information services] to [Assignment: organization-defined locations] based on [Assignment: organization-defined requirements or conditions].
   
-  Additional FedRAMP Requirements and Guidance:
-  Guidance:  System services refer to FTP, Telnet, and TFTP, etc.'
+    Additional FedRAMP Requirements and Guidance:
+    Guidance:  System services refer to FTP, Telnet, and TFTP, etc.
 SA-10:
   family: SA
   name: Developer Configuration Management
@@ -3586,10 +3608,11 @@ SA-11:
 SA-11 (1):
   family: SA
   name: Static Code Analysis
-  description: 'The organization requires the developer of the information system, system component, or information system service to employ static code analysis tools to identify common flaws and document the results of the analysis.
+  description: |-
+    The organization requires the developer of the information system, system component, or information system service to employ static code analysis tools to identify common flaws and document the results of the analysis.
 
-  SA-11 (1) Additional FedRAMP Requirements and Guidance: 
-  Requirement: The service provider documents in the Continuous Monitoring Plan, how newly developed code for the information system is reviewed.'
+    SA-11 (1) Additional FedRAMP Requirements and Guidance: 
+    Requirement: The service provider documents in the Continuous Monitoring Plan, how newly developed code for the information system is reviewed.
 SA-11 (2):
   family: SA
   name: Threat And Vulnerability Analyses
@@ -4035,12 +4058,13 @@ SC-7 (12):
 SC-7 (13):
   family: SC
   name: Isolation Of Security Tools / Mechanisms / Support Components
-  description: 'The organization isolates [FedRAMP Assignment: See SC-7 (13) additional FedRAMP Requirements and Guidance] from other internal information system components by implementing physically separate subnetworks with managed interfaces to other components of the system.
+  description: |-
+    The organization isolates [FedRAMP Assignment: See SC-7 (13) additional FedRAMP Requirements and Guidance] from other internal information system components by implementing physically separate subnetworks with managed interfaces to other components of the system.
   
-  SC-7 (13) Additional FedRAMP Requirements and Guidance: 
-  Requirement: The service provider defines key information security tools, mechanisms, and support components associated with system and security administration and security administration and isolates those tools, mechanisms, and support components from other internal information system components via physically or logically separate subnets. 
+    SC-7 (13) Additional FedRAMP Requirements and Guidance: 
+    Requirement: The service provider defines key information security tools, mechanisms, and support components associated with system and security administration and security administration and isolates those tools, mechanisms, and support components from other internal information system components via physically or logically separate subnets. 
   
-  Guidance: Examples include: information security tools, mechanisms, and support components such as, but not limited to public key infrastructure (PKI), patching infrastructure, cyber defense tools, special purpose gateway, vulnerability tracking systems, internet access points (IAPs); network element and data center administrative/management traffic; demilitarized zones (DMZs), Server farms/computing centers,  centralized audit log servers, etc.'
+    Guidance: Examples include: information security tools, mechanisms, and support components such as, but not limited to public key infrastructure (PKI), patching infrastructure, cyber defense tools, special purpose gateway, vulnerability tracking systems, internet access points (IAPs); network element and data center administrative/management traffic; demilitarized zones (DMZs), Server farms/computing centers, centralized audit log servers, etc.
 SC-7 (14):
   family: SC
   name: Protects Against Unauthorized Physical Connections
@@ -4120,10 +4144,11 @@ SC-11 (1):
 SC-12:
   family: SC
   name: Cryptographic Key Establishment And Management
-  description: 'The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].
+  description: |-
+    The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].
   
-  SC-12 Additional FedRAMP Requirements and Guidance: 
-  Guidance: Federally approved and validated cryptography.'
+    SC-12 Additional FedRAMP Requirements and Guidance: 
+    Guidance: Federally approved and validated cryptography.
 SC-12 (1):
   family: SC
   name: Availability
@@ -4316,10 +4341,11 @@ SC-27:
 SC-28:
   family: SC
   name: Protection Of Information At Rest
-  description: 'The information system protects the [FedRAMP Selection: confidentiality AND integrity] of [Assignment: organization-defined information at rest].
+  description: |-
+    The information system protects the [FedRAMP Selection: confidentiality AND integrity] of [Assignment: organization-defined information at rest].
   
-  SC-28 Additional FedRAMP Requirements and Guidance: 
-  Guidance: The organization supports the capability to use cryptographic mechanisms to protect information at rest.'
+    SC-28 Additional FedRAMP Requirements and Guidance: 
+    Guidance: The organization supports the capability to use cryptographic mechanisms to protect information at rest.
 SC-28 (1):
   family: SC
   name: Cryptographic Protection
@@ -4641,10 +4667,11 @@ SI-4 (4):
 SI-4 (5):
   family: SI
   name: System-Generated Alerts
-  description: 'The information system alerts [Assignment: organization-defined personnel or roles] when the following indications of compromise or potential compromise occur: [Assignment: organization-defined compromise indicators].
+  description: |-
+    The information system alerts [Assignment: organization-defined personnel or roles] when the following indications of compromise or potential compromise occur: [Assignment: organization-defined compromise indicators].
   
-  SI-4 (5) Additional FedRAMP Requirements and Guidance: 
-  Guidance: In accordance with the incident response plan.'
+    SI-4 (5) Additional FedRAMP Requirements and Guidance: 
+    Guidance: In accordance with the incident response plan.
 SI-4 (6):
   family: SI
   name: Restrict Non-Privileged Users
